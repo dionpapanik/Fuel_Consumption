@@ -7,30 +7,36 @@
 <body>
 <div class="container">
     <?php $this->load->view('theme/header'); ?>
-    <?php echo form_open('save'); ?>
-    <h1>Insert Data Into Database Using CodeIgniter</h1>
-    <hr/>
-    <?php if (isset($message)) { ?>
-        <h3>D ata inserted successfully </h3><br>
-    <?php } ?>
-    <?php echo form_label('Student Name :'); ?> <?php echo form_error('dname'); ?><br/>
-    <?php echo form_input(array('id' => 'dname', 'name' => 'dname')); ?><br/>
+    <?php echo form_open('save', array('class' => 'form-inline')); ?>
+    <h1>Insert Data Into Database</h1>
 
-    <?php echo form_label('Student Email :'); ?> <?php echo form_error('demail'); ?><br/>
-    <?php echo form_input(array('id' => 'demail', 'name' => 'demail')); ?><br/>
+    <?php if (isset($message)) : ?>
+        <h3> <?php echo $message ?> </h3>
+    <?php endif; ?>
 
-    <?php echo form_label('Student Mobile No. :'); ?> <?php echo form_error('dmobile'); ?><br/>
-    <?php echo form_input(array('id' => 'dmobile', 'name' => 'dmobile', 'placeholder' => '10 Digit Mobile No.')); ?>
+    <div class="form-group">
+        <?php echo form_label('Date From :', 'date_from'); ?> <?php echo form_error('date_from'); ?>
+        <?php echo form_input(array('id' => 'date_from', 'name' => 'date_from')); ?><br/>
+    </div>
+
+    <?php echo form_label('Date To :'); ?> <?php echo form_error('date_to'); ?><br/>
+    <?php echo form_input(array('id' => 'date_to', 'name' => 'date_to')); ?><br/>
+
+    <?php echo form_label('Liters :'); ?> <?php echo form_error('liters'); ?><br/>
+    <?php echo form_input(array('id' => 'liters', 'name' => 'liters')); ?>
     <br/>
 
-    <?php echo form_label('Student Address :'); ?> <?php echo form_error('daddress'); ?><br/>
-    <?php echo form_input(array('id' => 'daddress', 'name' => 'daddress')); ?><br/>
+    <?php echo form_label('Km :'); ?> <?php echo form_error('km'); ?><br/>
+    <?php echo form_input(array('id' => 'km', 'name' => 'km')); ?>
+    <br/>
+
+    <?php echo form_label('Money :'); ?> <?php echo form_error('money'); ?><br/>
+    <?php echo form_input(array('id' => 'money', 'name' => 'money')); ?>
+    <br/>
+
 
     <?php echo form_submit(array('id' => 'submit', 'value' => 'Submit')); ?>
     <?php echo form_close(); ?><br/>
-    <div id="fugo">
-
-    </div>
 
     <?php $this->load->view('theme/footer'); ?>
 </div>

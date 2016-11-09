@@ -14,33 +14,28 @@ class Save extends CI_Controller
 //Including validation library
         $this->load->library('form_validation');
         $this->form_validation->set_error_delimiters('<div class="error">', '</div>');
-//Validating Name Field
-        $this->form_validation->set_rules('dname', 'Username', 'required');
-
-//Validating Email Field
-        $this->form_validation->set_rules('demail', 'Email', 'required');
-
-//Validating Mobile no. Field
-        $this->form_validation->set_rules('dmobile', 'Mobile No.', 'required');
-
-//Validating Address Field
-        $this->form_validation->set_rules('daddress', 'Address', 'required');
+        $this->form_validation->set_rules('date_from', 'Date From', 'required');
+        $this->form_validation->set_rules('date_to', 'Date To', 'required');
+        $this->form_validation->set_rules('liters', 'Liters', 'required');
+        $this->form_validation->set_rules('km', 'Km', 'required');
+        $this->form_validation->set_rules('money', 'Money', 'required');
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('save');
+            $data['message'] = 'Error!!';
+            $this->load->view('save', $data);
         } else {
-//Setting values for tabel columns
             $data = array(
-                'week' => $this->input->post('dname'),
-                'liters' => $this->input->post('demail'),
-                'km' => $this->input->post('dmobile'),
-                'money' => $this->input->post('daddress')
+                'date_from' => $this->input->post('date_from'),
+                'date_to' => $this->input->post('date_to'),
+                'liters' => $this->input->post('liters'),
+                'km' => $this->input->post('km'),
+                'money' => $this->input->post('money')
             );
 //Transfering data to Model
             $this->savedata->form_insert($data);
-            $data['message'] = 'Data Inserted Successfully';
+            $data['message'] = 'Data Inserted in DB Successfully :)';
 //Loading View
-            $this->load->view('save', $data);
+            $this->load->view('success', $data);
         }
     }
 
