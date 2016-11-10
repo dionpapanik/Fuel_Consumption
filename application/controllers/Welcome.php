@@ -19,11 +19,17 @@ class Welcome extends CI_Controller
      * map to /index.php/welcome/<method_name>
      * @see https://codeigniter.com/user_guide/general/urls.html
      */
+
+
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->model('fetchdata');
+    }
+
     public function index()
     {
-        $data = array(
-            'title' => 'Title'
-        );
-        $this->load->view('index', $data);
+        $this->data['fuel'] = $this->fetchdata->getConsumption();
+        $this->load->view('index', $this->data);
     }
 }

@@ -63,9 +63,11 @@
                 <?php echo form_input(array('id' => 'money', 'name' => 'money')); ?>
             </div>
         </div>
+    </div>
 
-        <div class="col-md-6">
-            <?php echo form_submit(array('id' => 'submit', 'class' => 'btn btn-success', 'value' => 'Submit')); ?>
+    <div class="row">
+        <div class="col-md-12">
+            <?php echo form_submit(array('id' => 'submit', 'class' => 'btn btn-success btn-block', 'value' => 'Submit')); ?>
         </div>
     </div>
 

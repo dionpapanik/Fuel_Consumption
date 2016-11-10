@@ -8,7 +8,7 @@
 <div class="container">
     <?php $this->load->view('theme/header'); ?>
     <div class="jumbotron text-center">
-        <h1><?php echo $message ?></h1>
+        <h3><?php echo $message ?></h3>
     </div>
 
     <?php $this->load->view('theme/footer'); ?>

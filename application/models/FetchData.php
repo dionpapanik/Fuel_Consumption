@@ -5,7 +5,7 @@
 
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class SaveData extends CI_Model
+class FetchData extends CI_Model
 {
     public function __construct()
     {
@@ -14,9 +14,12 @@ class SaveData extends CI_Model
 
     }
 
-    function form_insert($data)
+    function getConsumption()
     {
-        $this->db->insert('fuel_data', $data);
+        $this->db->select("date_from,date_to,liters,km,money");
+        $this->db->from('fuel_data');
+        $query = $this->db->get();
+        return $query->result();
     }
 
 }
