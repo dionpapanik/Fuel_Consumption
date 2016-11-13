@@ -17,7 +17,7 @@ class Save extends CI_Controller
     {
 //Including validation library
         $this->load->library('form_validation');
-        $this->form_validation->set_error_delimiters('<div class="error">', '</div>');
+        $this->form_validation->set_error_delimiters('<div class="alert alert-danger">', '</div>');
         $this->form_validation->set_rules('date_from', 'Date From', 'required');
         $this->form_validation->set_rules('date_to', 'Date To', 'required');
         $this->form_validation->set_rules('liters', 'Liters', 'required');

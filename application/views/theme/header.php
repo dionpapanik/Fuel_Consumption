@@ -13,8 +13,7 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo base_url(); ?>">Home</a></li>
-                <li><a href="<?php echo base_url(); ?>save">Save</a></li>
-                <li><a href="<?php echo base_url(); ?>contact">Contact</a></li>
+                <li><a href="<?php echo base_url(); ?>save">Save Data</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
@@ -22,6 +21,6 @@
 
 
 <div class="jumbotron text-center">
-    <h1><?php // echo $title ?></h1>
+    <h1><?php echo $title ?></h1>
     <p>random stuff here</p>
 </div>
