@@ -170,9 +170,10 @@
             }
             ?>
             <h3>Total Data</h3>
-            <p>Total Liters = <?php echo $total_lt ?> lt</p>
-            <p>Total Kilometers = <?php echo $total_km ?> km</p>
-            <p>Total Money Spent = <?php echo $total_money ?> €</p>
+            <p>Total Liters: <?php echo $total_lt ?> lt</p>
+            <p>Total Kilometers: <?php echo $total_km ?> km</p>
+            <p>Total Money Spent: <?php echo $total_money ?> €</p>
+            <p>Total Avg Consumption: <?php echo round(($total_lt / $total_km) * 100, 2) ?> lt/100km</p>
 
 
         </div>
