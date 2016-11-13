@@ -14,15 +14,7 @@
             <h1>Insert Data Into Database</h1>
         </div>
     </div>
-
-    <div class="row">
-        <div class="col-md-12">
-            <?php if (isset($message)) : ?>
-                <h3> <?php echo $message ?> </h3>
-            <?php endif; ?>
-        </div>
-    </div>
-
+    
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">

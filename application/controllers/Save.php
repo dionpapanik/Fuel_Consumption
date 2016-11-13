@@ -25,8 +25,7 @@ class Save extends CI_Controller
         $this->form_validation->set_rules('money', 'Money', 'required');
 
         if ($this->form_validation->run() == FALSE) {
-            $data['message'] = 'Error!!';
-            $this->load->view('save', $data);
+            $this->load->view('save');
         } else {
             $data = array(
                 'date_from' => $this->input->post('date_from'),

@@ -21,6 +21,6 @@
 
 
 <div class="jumbotron text-center">
-    <h1><?php echo $title ?></h1>
+    <h1><?php//  echo $title ?></h1>
     <p>random stuff here</p>
 </div>
