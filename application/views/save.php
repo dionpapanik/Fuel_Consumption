@@ -14,7 +14,16 @@
             <h1>Insert Data Into Database</h1>
         </div>
     </div>
-    
+    <script>
+        $(function () {
+            $("#date_from").datepicker({
+                dateFormat: "dd-mm-yy"
+            });
+            $("#date_to").datepicker({
+                dateFormat: "dd-mm-yy"
+            });
+        });
+    </script>
     <div class="row">
         <div class="col-md-6">
             <div class="form-group">
