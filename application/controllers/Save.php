@@ -30,9 +30,9 @@ class Save extends CI_Controller
             $data = array(
                 'date_from' => $this->input->post('date_from'),
                 'date_to' => $this->input->post('date_to'),
-                'liters' => $this->input->post('liters'),
-                'km' => $this->input->post('km'),
-                'money' => $this->input->post('money')
+                'liters' => str_replace(',', '.', $this->input->post('liters')),
+                'km' => str_replace(',', '.', $this->input->post('km')),
+                'money' => str_replace(',', '.', $this->input->post('money'))
             );
 //Transfering data to Model
             $this->savedata->form_insert($data);

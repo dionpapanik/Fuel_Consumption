@@ -18,7 +18,9 @@
         <p>Money Spent: <?php echo $money ?></p>
     </div>
 
-    <a href="<?php echo base_url(); ?>" class="btn btn-primary btn-lg" role="button">Return in Homepage</a>
+    <a href="<?php echo base_url(); ?>" class="btn btn-info btn-lg" role="button">Return
+        <to></to>
+        Homepage</a>
 
     <?php $this->load->view('theme/footer'); ?>
 </div>
