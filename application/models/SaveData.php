@@ -11,7 +11,6 @@ class SaveData extends CI_Model
     {
         parent::__construct();
         $this->load->database();
-
     }
 
     function form_insert($data)
