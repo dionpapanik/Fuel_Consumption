@@ -11,9 +11,13 @@
 
     <div class="alert alert-success" role="alert">
         <h4 class="alert-heading text-center"><?php echo $message ?></h4>
-        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer
-            so that you can see how spacing within an alert works with this kind of content.</p>
-        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+        <p class="mb-0">You saved in database the following records</p>
+        <p>Date From: <?php echo $date_from ?></p>
+        <p>Date To: <?php echo $date_to ?></p>
+        <p>Liters: <?php echo $liters ?></p>
+        <p>Km: <?php echo $km ?></p>
+        <p>Money Spent: <?php echo $money ?></p>
+
     </div>
 
 

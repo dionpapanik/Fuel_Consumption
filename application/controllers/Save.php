@@ -36,7 +36,7 @@ class Save extends CI_Controller
             );
 //Transfering data to Model
             $this->savedata->form_insert($data);
-            $data['message'] = 'Data Inserted in DB Successfully :)';
+            $data['message'] = 'Data Inserted in DataBase Successfully';
 //Loading View
             $this->load->view('success', $data);
         }
