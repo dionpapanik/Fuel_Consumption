@@ -67,7 +67,7 @@
     </div>
 
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-md-6 col-md-offset-3">
             <?php echo form_submit(array('id' => 'submit', 'class' => 'btn btn-success btn-block', 'value' => 'Submit')); ?>
         </div>
     </div>
