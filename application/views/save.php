@@ -11,7 +11,7 @@
 
     <div class="row">
         <div class="col-md-12">
-            <h1>Insert Data Into Database</h1>
+            <h2 class="page-header">Insert Data Into Database</h2>
         </div>
     </div>
     <script>

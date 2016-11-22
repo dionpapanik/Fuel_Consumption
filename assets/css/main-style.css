@@ -1,0 +1,13 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.navbar-brand {
+    font-size: 26px;
+}
+
+.modal-footer, .help-block {
+    font-size: 12px;
+}

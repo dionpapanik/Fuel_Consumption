@@ -12,6 +12,7 @@ class Welcome extends CI_Controller
     public function index()
     {
         $this->data['fuel'] = $this->fetchdata->getConsumption();
+        $this->data['pagetitle'] = 'Fuel Consumption - Index Page';
         $this->load->view('index', $this->data);
     }
 }

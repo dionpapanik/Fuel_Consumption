@@ -66,17 +66,20 @@ class Save extends CI_Controller
         $this->form_validation->set_rules($config_validation);
 
         if ($this->form_validation->run() == FALSE) {
-            $this->load->view('save');
+            $data['pagetitle'] = 'Fuel Consumption - Save Page';
+            $this->load->view('save', $data);
         } else {
             $data = array(
                 'date_from' => $this->input->post('date_from'),
                 'date_to' => $this->input->post('date_to'),
                 'liters' => str_replace(',', '.', $this->input->post('liters')),
                 'km' => str_replace(',', '.', $this->input->post('km')),
-                'money' => str_replace(',', '.', $this->input->post('money'))
+                'money' => str_replace(',', '.', $this->input->post('money')),
+                'pagetitle' => 'Success Page'
             );
             $this->savedata->form_insert($data); //Transfering data to Model
             $data['message'] = 'Data Inserted in DataBase Successfully';
+            $data['pagetitle'] = 'Data Inserted in DataBase Successfully';
             $this->load->view('success', $data);
         }
     }
