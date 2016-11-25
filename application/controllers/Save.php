@@ -74,8 +74,7 @@ class Save extends CI_Controller
                 'date_to' => $this->input->post('date_to'),
                 'liters' => str_replace(',', '.', $this->input->post('liters')),
                 'km' => str_replace(',', '.', $this->input->post('km')),
-                'money' => str_replace(',', '.', $this->input->post('money')),
-                'pagetitle' => 'Success Page'
+                'money' => str_replace(',', '.', $this->input->post('money'))
             );
             $this->savedata->form_insert($data); //Transfering data to Model
             $data['message'] = 'Data Inserted in DataBase Successfully';
