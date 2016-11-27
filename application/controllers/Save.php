@@ -60,7 +60,6 @@ class Save extends CI_Controller
                 ),
             )
         );
-//Including validation library
         $this->load->library('form_validation');
         $this->form_validation->set_error_delimiters('<div class="alert alert-danger">', '</div>');
         $this->form_validation->set_rules($config_validation);
@@ -82,5 +81,4 @@ class Save extends CI_Controller
             $this->load->view('success', $data);
         }
     }
-
 }

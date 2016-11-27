@@ -14,6 +14,7 @@
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo base_url(); ?>">Home Page</a></li>
                 <li><a href="<?php echo base_url(); ?>save">Save Data</a></li>
+                <li><a href="<?php echo base_url(); ?>delete">Delete Data</a></li>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
