@@ -16,7 +16,7 @@ class FetchData extends CI_Model
 
     function getConsumption()
     {
-        $this->db->select("date_from,date_to,liters,km,money");
+        $this->db->select("*");
         $this->db->from('fuel_data');
         $query = $this->db->get();
         return $query->result();

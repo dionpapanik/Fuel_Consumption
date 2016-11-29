@@ -19,4 +19,10 @@ class DeleteData extends CI_Model
         $CI->load->model('fetchdata');
         return $CI->fetchdata->getConsumption();
     }
+
+    function deleteConsumption($id)
+    {
+        $this->db->where('id', $id);
+        $this->db->delete('fuel_data');
+    }
 }
