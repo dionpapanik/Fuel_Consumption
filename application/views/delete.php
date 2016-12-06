@@ -32,7 +32,7 @@
                         <td><?php echo round(($data->liters / $data->km) * 100, 2) ?></td>
                         <td><?php echo $data->money ?></td>
                         <td>
-                            <a href="<?php echo base_url() . "delete/delete_id/" . $data->id; ?>">
+                            <a class="confirm" href="<?php echo base_url() . "delete/delete_id/" . $data->id; ?>">
                                 <button type="button" class="btn btn-danger">Delete</button>
                             </a>
                         </td>
@@ -42,7 +42,21 @@
             </table>
         </div>
     </div>
-
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.confirm').confirm({
+                title: 'Caution!',
+                content: "This action will permanently delete these data. Are you sure?",
+                buttons: {
+                    confirm: function () {
+                        location.href = this.$target.attr('href');
+                    },
+                    cancel: function () {
+                    }
+                }
+            });
+        });
+    </script>
     <?php $this->load->view('theme/footer'); ?>
 </div>
 </body>

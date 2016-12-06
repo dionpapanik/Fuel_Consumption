@@ -8,10 +8,12 @@
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap.css"/>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/bootstrap-theme.css"/>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/jquery-ui.css"/>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/jquery-confirm.css"/>
 <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>assets/css/main-style.css"/>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/bootstrap.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-ui.js"></script>
+<script type="text/javascript" src="<?php echo base_url(); ?>assets/js/jquery-confirm.js"></script>
 <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/main.js"></script>
 <script type="text/javascript"
         src="//cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
