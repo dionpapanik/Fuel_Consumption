@@ -17,10 +17,10 @@
     <script>
         $(function () {
             $("#date_from").datepicker({
-                dateFormat: "d-M"
+                dateFormat: "d/m"
             });
             $("#date_to").datepicker({
-                dateFormat: "d-M"
+                dateFormat: "d/m"
             });
         });
     </script>
